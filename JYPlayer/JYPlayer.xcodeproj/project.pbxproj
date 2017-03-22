@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D704ABE61E82811A00264E95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D704ABE51E82811A00264E95 /* AppDelegate.swift */; };
-		D704ABEB1E82811A00264E95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D704ABE91E82811A00264E95 /* Main.storyboard */; };
 		D704ABED1E82811A00264E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D704ABEC1E82811A00264E95 /* Assets.xcassets */; };
 		D704ABF01E82811A00264E95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D704ABEE1E82811A00264E95 /* LaunchScreen.storyboard */; };
 		D704ABFB1E82811A00264E95 /* JYPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D704ABFA1E82811A00264E95 /* JYPlayerTests.swift */; };
@@ -46,7 +45,6 @@
 /* Begin PBXFileReference section */
 		D704ABE21E82811A00264E95 /* JYPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D704ABE51E82811A00264E95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D704ABEA1E82811A00264E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D704ABEC1E82811A00264E95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D704ABEF1E82811A00264E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D704ABF11E82811A00264E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 			children = (
 				D704AC131E82842300264E95 /* Classes */,
 				D704ABE51E82811A00264E95 /* AppDelegate.swift */,
-				D704ABE91E82811A00264E95 /* Main.storyboard */,
 				D704ABEC1E82811A00264E95 /* Assets.xcassets */,
 				D704ABEE1E82811A00264E95 /* LaunchScreen.storyboard */,
 				D704ABF11E82811A00264E95 /* Info.plist */,
@@ -391,7 +388,6 @@
 				D704ABED1E82811A00264E95 /* Assets.xcassets in Resources */,
 				D704AC351E82842300264E95 /* JYPlayView.xib in Resources */,
 				D704AC2D1E82842300264E95 /* JYLocalMusicListViewController.storyboard in Resources */,
-				D704ABEB1E82811A00264E95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,14 +455,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D704ABE91E82811A00264E95 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D704ABEA1E82811A00264E95 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D704ABEE1E82811A00264E95 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
