@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D75820081EC325520046EA02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75820071EC325520046EA02 /* AppDelegate.swift */; };
+		D758200A1EC325520046EA02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75820091EC325520046EA02 /* ViewController.swift */; };
+		D758200D1EC325520046EA02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D758200B1EC325520046EA02 /* Main.storyboard */; };
+		D758200F1EC325520046EA02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D758200E1EC325520046EA02 /* Assets.xcassets */; };
+		D75820121EC325520046EA02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75820101EC325520046EA02 /* LaunchScreen.storyboard */; };
+		D758201D1EC325520046EA02 /* JYMusicPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758201C1EC325520046EA02 /* JYMusicPlayerTests.swift */; };
+		D75820281EC325520046EA02 /* JYMusicPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75820271EC325520046EA02 /* JYMusicPlayerUITests.swift */; };
+		D75820371EC325CB0046EA02 /* JYMusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75820361EC325CB0046EA02 /* JYMusicPlayerView.swift */; };
+		D75820391EC325D40046EA02 /* JYMusicPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D75820381EC325D40046EA02 /* JYMusicPlayerView.xib */; };
+		D758203B1EC3263A0046EA02 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758203A1EC3263A0046EA02 /* UIView+Extension.swift */; };
+		D758203D1EC3266E0046EA02 /* JYMusicPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758203C1EC3266E0046EA02 /* JYMusicPlayerManager.swift */; };
+		D758203F1EC326FE0046EA02 /* JYMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758203E1EC326FE0046EA02 /* JYMusic.swift */; };
+		D75820431EC3271B0046EA02 /* test1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D75820401EC3271B0046EA02 /* test1.mp3 */; };
+		D75820441EC3271B0046EA02 /* test2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D75820411EC3271B0046EA02 /* test2.mp3 */; };
+		D75820451EC3271B0046EA02 /* test3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D75820421EC3271B0046EA02 /* test3.mp3 */; };
+		D758204A1EC327C20046EA02 /* JYLocalMusicListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75820481EC327C20046EA02 /* JYLocalMusicListViewController.storyboard */; };
+		D758204B1EC327C20046EA02 /* JYLocalMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75820491EC327C20046EA02 /* JYLocalMusicListViewController.swift */; };
+		D758204E1EC327DB0046EA02 /* JYOnlineMusicListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D758204C1EC327DB0046EA02 /* JYOnlineMusicListViewController.storyboard */; };
+		D758204F1EC327DB0046EA02 /* JYOnlineMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758204D1EC327DB0046EA02 /* JYOnlineMusicListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D75820191EC325520046EA02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7581FFC1EC325510046EA02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D75820031EC325510046EA02;
+			remoteInfo = JYMusicPlayer;
+		};
+		D75820241EC325520046EA02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7581FFC1EC325510046EA02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D75820031EC325510046EA02;
+			remoteInfo = JYMusicPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D75820041EC325520046EA02 /* JYMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D75820071EC325520046EA02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D75820091EC325520046EA02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D758200C1EC325520046EA02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D758200E1EC325520046EA02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D75820111EC325520046EA02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D75820131EC325520046EA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D75820181EC325520046EA02 /* JYMusicPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JYMusicPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D758201C1EC325520046EA02 /* JYMusicPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYMusicPlayerTests.swift; sourceTree = "<group>"; };
+		D758201E1EC325520046EA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D75820231EC325520046EA02 /* JYMusicPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JYMusicPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D75820271EC325520046EA02 /* JYMusicPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYMusicPlayerUITests.swift; sourceTree = "<group>"; };
+		D75820291EC325520046EA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D75820361EC325CB0046EA02 /* JYMusicPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYMusicPlayerView.swift; sourceTree = "<group>"; };
+		D75820381EC325D40046EA02 /* JYMusicPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JYMusicPlayerView.xib; sourceTree = "<group>"; };
+		D758203A1EC3263A0046EA02 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D758203C1EC3266E0046EA02 /* JYMusicPlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYMusicPlayerManager.swift; sourceTree = "<group>"; };
+		D758203E1EC326FE0046EA02 /* JYMusic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYMusic.swift; sourceTree = "<group>"; };
+		D75820401EC3271B0046EA02 /* test1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test1.mp3; sourceTree = "<group>"; };
+		D75820411EC3271B0046EA02 /* test2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test2.mp3; sourceTree = "<group>"; };
+		D75820421EC3271B0046EA02 /* test3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test3.mp3; sourceTree = "<group>"; };
+		D75820481EC327C20046EA02 /* JYLocalMusicListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JYLocalMusicListViewController.storyboard; sourceTree = "<group>"; };
+		D75820491EC327C20046EA02 /* JYLocalMusicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYLocalMusicListViewController.swift; sourceTree = "<group>"; };
+		D758204C1EC327DB0046EA02 /* JYOnlineMusicListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JYOnlineMusicListViewController.storyboard; sourceTree = "<group>"; };
+		D758204D1EC327DB0046EA02 /* JYOnlineMusicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYOnlineMusicListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D75820011EC325510046EA02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D75820151EC325520046EA02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D75820201EC325520046EA02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7581FFB1EC325510046EA02 = {
+			isa = PBXGroup;
+			children = (
+				D75820061EC325520046EA02 /* JYMusicPlayer */,
+				D758201B1EC325520046EA02 /* JYMusicPlayerTests */,
+				D75820261EC325520046EA02 /* JYMusicPlayerUITests */,
+				D75820051EC325520046EA02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D75820051EC325520046EA02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D75820041EC325520046EA02 /* JYMusicPlayer.app */,
+				D75820181EC325520046EA02 /* JYMusicPlayerTests.xctest */,
+				D75820231EC325520046EA02 /* JYMusicPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D75820061EC325520046EA02 /* JYMusicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				D75820351EC325B30046EA02 /* JYMusicPlayerView */,
+				D75820461EC3279B0046EA02 /* LocalPlay */,
+				D75820471EC3279B0046EA02 /* OnlinePlay */,
+				D75820071EC325520046EA02 /* AppDelegate.swift */,
+				D75820091EC325520046EA02 /* ViewController.swift */,
+				D758200B1EC325520046EA02 /* Main.storyboard */,
+				D758203A1EC3263A0046EA02 /* UIView+Extension.swift */,
+				D758200E1EC325520046EA02 /* Assets.xcassets */,
+				D75820101EC325520046EA02 /* LaunchScreen.storyboard */,
+				D75820131EC325520046EA02 /* Info.plist */,
+				D75820401EC3271B0046EA02 /* test1.mp3 */,
+				D75820411EC3271B0046EA02 /* test2.mp3 */,
+				D75820421EC3271B0046EA02 /* test3.mp3 */,
+			);
+			path = JYMusicPlayer;
+			sourceTree = "<group>";
+		};
+		D758201B1EC325520046EA02 /* JYMusicPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D758201C1EC325520046EA02 /* JYMusicPlayerTests.swift */,
+				D758201E1EC325520046EA02 /* Info.plist */,
+			);
+			path = JYMusicPlayerTests;
+			sourceTree = "<group>";
+		};
+		D75820261EC325520046EA02 /* JYMusicPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D75820271EC325520046EA02 /* JYMusicPlayerUITests.swift */,
+				D75820291EC325520046EA02 /* Info.plist */,
+			);
+			path = JYMusicPlayerUITests;
+			sourceTree = "<group>";
+		};
+		D75820351EC325B30046EA02 /* JYMusicPlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				D75820361EC325CB0046EA02 /* JYMusicPlayerView.swift */,
+				D75820381EC325D40046EA02 /* JYMusicPlayerView.xib */,
+				D758203C1EC3266E0046EA02 /* JYMusicPlayerManager.swift */,
+				D758203E1EC326FE0046EA02 /* JYMusic.swift */,
+			);
+			path = JYMusicPlayerView;
+			sourceTree = "<group>";
+		};
+		D75820461EC3279B0046EA02 /* LocalPlay */ = {
+			isa = PBXGroup;
+			children = (
+				D75820481EC327C20046EA02 /* JYLocalMusicListViewController.storyboard */,
+				D75820491EC327C20046EA02 /* JYLocalMusicListViewController.swift */,
+			);
+			path = LocalPlay;
+			sourceTree = "<group>";
+		};
+		D75820471EC3279B0046EA02 /* OnlinePlay */ = {
+			isa = PBXGroup;
+			children = (
+				D758204C1EC327DB0046EA02 /* JYOnlineMusicListViewController.storyboard */,
+				D758204D1EC327DB0046EA02 /* JYOnlineMusicListViewController.swift */,
+			);
+			path = OnlinePlay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D75820031EC325510046EA02 /* JYMusicPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D758202C1EC325520046EA02 /* Build configuration list for PBXNativeTarget "JYMusicPlayer" */;
+			buildPhases = (
+				D75820001EC325510046EA02 /* Sources */,
+				D75820011EC325510046EA02 /* Frameworks */,
+				D75820021EC325510046EA02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JYMusicPlayer;
+			productName = JYMusicPlayer;
+			productReference = D75820041EC325520046EA02 /* JYMusicPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D75820171EC325520046EA02 /* JYMusicPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D758202F1EC325520046EA02 /* Build configuration list for PBXNativeTarget "JYMusicPlayerTests" */;
+			buildPhases = (
+				D75820141EC325520046EA02 /* Sources */,
+				D75820151EC325520046EA02 /* Frameworks */,
+				D75820161EC325520046EA02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D758201A1EC325520046EA02 /* PBXTargetDependency */,
+			);
+			name = JYMusicPlayerTests;
+			productName = JYMusicPlayerTests;
+			productReference = D75820181EC325520046EA02 /* JYMusicPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D75820221EC325520046EA02 /* JYMusicPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D75820321EC325520046EA02 /* Build configuration list for PBXNativeTarget "JYMusicPlayerUITests" */;
+			buildPhases = (
+				D758201F1EC325520046EA02 /* Sources */,
+				D75820201EC325520046EA02 /* Frameworks */,
+				D75820211EC325520046EA02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D75820251EC325520046EA02 /* PBXTargetDependency */,
+			);
+			name = JYMusicPlayerUITests;
+			productName = JYMusicPlayerUITests;
+			productReference = D75820231EC325520046EA02 /* JYMusicPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7581FFC1EC325510046EA02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "靳志远";
+				TargetAttributes = {
+					D75820031EC325510046EA02 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = Y2S2575EP7;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					D75820171EC325520046EA02 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = Y2S2575EP7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D75820031EC325510046EA02;
+					};
+					D75820221EC325520046EA02 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = Y2S2575EP7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D75820031EC325510046EA02;
+					};
+				};
+			};
+			buildConfigurationList = D7581FFF1EC325510046EA02 /* Build configuration list for PBXProject "JYMusicPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7581FFB1EC325510046EA02;
+			productRefGroup = D75820051EC325520046EA02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D75820031EC325510046EA02 /* JYMusicPlayer */,
+				D75820171EC325520046EA02 /* JYMusicPlayerTests */,
+				D75820221EC325520046EA02 /* JYMusicPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D75820021EC325510046EA02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D75820121EC325520046EA02 /* LaunchScreen.storyboard in Resources */,
+				D758204E1EC327DB0046EA02 /* JYOnlineMusicListViewController.storyboard in Resources */,
+				D758200F1EC325520046EA02 /* Assets.xcassets in Resources */,
+				D758204A1EC327C20046EA02 /* JYLocalMusicListViewController.storyboard in Resources */,
+				D75820391EC325D40046EA02 /* JYMusicPlayerView.xib in Resources */,
+				D75820451EC3271B0046EA02 /* test3.mp3 in Resources */,
+				D75820431EC3271B0046EA02 /* test1.mp3 in Resources */,
+				D758200D1EC325520046EA02 /* Main.storyboard in Resources */,
+				D75820441EC3271B0046EA02 /* test2.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D75820161EC325520046EA02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D75820211EC325520046EA02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D75820001EC325510046EA02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D758203F1EC326FE0046EA02 /* JYMusic.swift in Sources */,
+				D758203D1EC3266E0046EA02 /* JYMusicPlayerManager.swift in Sources */,
+				D758204B1EC327C20046EA02 /* JYLocalMusicListViewController.swift in Sources */,
+				D758200A1EC325520046EA02 /* ViewController.swift in Sources */,
+				D758204F1EC327DB0046EA02 /* JYOnlineMusicListViewController.swift in Sources */,
+				D75820371EC325CB0046EA02 /* JYMusicPlayerView.swift in Sources */,
+				D758203B1EC3263A0046EA02 /* UIView+Extension.swift in Sources */,
+				D75820081EC325520046EA02 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D75820141EC325520046EA02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D758201D1EC325520046EA02 /* JYMusicPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D758201F1EC325520046EA02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D75820281EC325520046EA02 /* JYMusicPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D758201A1EC325520046EA02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D75820031EC325510046EA02 /* JYMusicPlayer */;
+			targetProxy = D75820191EC325520046EA02 /* PBXContainerItemProxy */;
+		};
+		D75820251EC325520046EA02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D75820031EC325510046EA02 /* JYMusicPlayer */;
+			targetProxy = D75820241EC325520046EA02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D758200B1EC325520046EA02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D758200C1EC325520046EA02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D75820101EC325520046EA02 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D75820111EC325520046EA02 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D758202A1EC325520046EA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D758202B1EC325520046EA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D758202D1EC325520046EA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y2S2575EP7;
+				INFOPLIST_FILE = JYMusicPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-2345.JYMusicPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D758202E1EC325520046EA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y2S2575EP7;
+				INFOPLIST_FILE = JYMusicPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-2345.JYMusicPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D75820301EC325520046EA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y2S2575EP7;
+				INFOPLIST_FILE = JYMusicPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-2345.JYMusicPlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JYMusicPlayer.app/JYMusicPlayer";
+			};
+			name = Debug;
+		};
+		D75820311EC325520046EA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y2S2575EP7;
+				INFOPLIST_FILE = JYMusicPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-2345.JYMusicPlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JYMusicPlayer.app/JYMusicPlayer";
+			};
+			name = Release;
+		};
+		D75820331EC325520046EA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Y2S2575EP7;
+				INFOPLIST_FILE = JYMusicPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-2345.JYMusicPlayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = JYMusicPlayer;
+			};
+			name = Debug;
+		};
+		D75820341EC325520046EA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Y2S2575EP7;
+				INFOPLIST_FILE = JYMusicPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-2345.JYMusicPlayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = JYMusicPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7581FFF1EC325510046EA02 /* Build configuration list for PBXProject "JYMusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D758202A1EC325520046EA02 /* Debug */,
+				D758202B1EC325520046EA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D758202C1EC325520046EA02 /* Build configuration list for PBXNativeTarget "JYMusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D758202D1EC325520046EA02 /* Debug */,
+				D758202E1EC325520046EA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D758202F1EC325520046EA02 /* Build configuration list for PBXNativeTarget "JYMusicPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D75820301EC325520046EA02 /* Debug */,
+				D75820311EC325520046EA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D75820321EC325520046EA02 /* Build configuration list for PBXNativeTarget "JYMusicPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D75820331EC325520046EA02 /* Debug */,
+				D75820341EC325520046EA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7581FFC1EC325510046EA02 /* Project object */;
+}
