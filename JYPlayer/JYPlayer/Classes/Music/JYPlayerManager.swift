@@ -23,6 +23,24 @@ class JYPlayerManager: NSObject {
         return JYPlayerManager()
     }()
     
+    override init() {
+        // 设置支持后台播放
+        do {
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+        }catch {
+            
+        }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            
+        }catch {
+            
+        }
+    }
+    
+    
     /**
      播放
      urlString: 音乐链接
