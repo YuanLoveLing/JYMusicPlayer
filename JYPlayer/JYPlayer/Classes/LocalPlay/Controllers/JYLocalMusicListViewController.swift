@@ -34,7 +34,6 @@ class JYLocalMusicListViewController: UITableViewController {
         var array = [JYMusic]()
         for i in 0...2 {
             var music = JYMusic()
-            music.urlString = "在线音乐链接\(i)"
             music.name = "在线音乐名称\(i)"
             music.singerName = "在线歌手名称\(i)"
             music.urlString = Bundle.main.path(forResource: "test\(i + 1)", ofType: "mp3")

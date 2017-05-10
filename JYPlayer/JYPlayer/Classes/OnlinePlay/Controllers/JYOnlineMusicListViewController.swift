@@ -22,7 +22,7 @@ class JYOnlineMusicListViewController: UITableViewController {
     /// 设置UI
     fileprivate func setupUI() {
         // 设置导航栏
-        title = "本地音乐列表"
+        title = "在线音乐列表"
         
         // 设置tableView
         
@@ -34,9 +34,8 @@ class JYOnlineMusicListViewController: UITableViewController {
         var array = [JYMusic]()
         for i in 0...2 {
             var music = JYMusic()
-            music.urlString = "本地音乐链接\(i)"
-            music.name = "本地音乐名称\(i)"
-            music.singerName = "本地歌手名称\(i)"
+            music.name = "在线音乐名称\(i)"
+            music.singerName = "在线歌手名称\(i)"
 
             if i == 0 {
                 music.urlString = "http://img.owspace.com/F_lbg187532_1475550258.2699715.mp3"
@@ -45,7 +44,7 @@ class JYOnlineMusicListViewController: UITableViewController {
                 music.urlString = "http://img.owspace.com/F_guq226254_1475225218.3955587.mp3"
                 
             }else if i == 2 {
-                music.urlString = "http://img.owspace.com/F_ans226254_1475644491.6466485.mp3"
+                music.urlString = "http://tm3dfds.yusi.tv/uuauth/UUAuth/wymp3/2017/4/4/739287_20174421652_2537_21814_13321681.mp3"
             }
             
             array.append(music)

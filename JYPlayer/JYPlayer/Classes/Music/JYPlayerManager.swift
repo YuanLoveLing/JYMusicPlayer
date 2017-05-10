@@ -49,6 +49,18 @@ class JYPlayerManager: NSObject {
             }
             playerItem = AVPlayerItem(url: myURL)
             player = AVPlayer(playerItem: playerItem)
+            
+            let versionStr = NSString(string: UIDevice.current.systemVersion)
+            if versionStr.integerValue >= 10 {
+                /*
+                 ios10种AVPlayer增加了多个属性，其中有几个需要注意一下
+                 timeControlStatus
+                 automaticallyWaitsToMinimizeStalling: 自动等待以减少拖延
+                 */
+                // 设置为非自动等待，以避免在线播放时缓冲时间过长
+                player?.automaticallyWaitsToMinimizeStalling = false
+            }
+            
             // 将新创建的playerItem放入缓存池中
             playerDictionary[urlString] = player
         }

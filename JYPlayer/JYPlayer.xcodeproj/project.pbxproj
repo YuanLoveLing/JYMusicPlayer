@@ -23,6 +23,9 @@
 		D704AC351E82842300264E95 /* JYPlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D704AC261E82842300264E95 /* JYPlayView.xib */; };
 		D704AC361E82842300264E95 /* JYOnlineMusicListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D704AC291E82842300264E95 /* JYOnlineMusicListViewController.storyboard */; };
 		D704AC371E82842300264E95 /* JYOnlineMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D704AC2A1E82842300264E95 /* JYOnlineMusicListViewController.swift */; };
+		D76608E61EC2B5D50071F16B /* test1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D76608E31EC2B5D50071F16B /* test1.mp3 */; };
+		D76608E71EC2B5D50071F16B /* test2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D76608E41EC2B5D50071F16B /* test2.mp3 */; };
+		D76608E81EC2B5D50071F16B /* test3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D76608E51EC2B5D50071F16B /* test3.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		D704AC261E82842300264E95 /* JYPlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JYPlayView.xib; sourceTree = "<group>"; };
 		D704AC291E82842300264E95 /* JYOnlineMusicListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JYOnlineMusicListViewController.storyboard; sourceTree = "<group>"; };
 		D704AC2A1E82842300264E95 /* JYOnlineMusicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYOnlineMusicListViewController.swift; sourceTree = "<group>"; };
+		D76608E31EC2B5D50071F16B /* test1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test1.mp3; sourceTree = "<group>"; };
+		D76608E41EC2B5D50071F16B /* test2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test2.mp3; sourceTree = "<group>"; };
+		D76608E51EC2B5D50071F16B /* test3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test3.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,9 @@
 				D704ABEC1E82811A00264E95 /* Assets.xcassets */,
 				D704ABEE1E82811A00264E95 /* LaunchScreen.storyboard */,
 				D704ABF11E82811A00264E95 /* Info.plist */,
+				D76608E31EC2B5D50071F16B /* test1.mp3 */,
+				D76608E41EC2B5D50071F16B /* test2.mp3 */,
+				D76608E51EC2B5D50071F16B /* test3.mp3 */,
 			);
 			path = JYPlayer;
 			sourceTree = "<group>";
@@ -145,10 +154,10 @@
 		D704AC131E82842300264E95 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D704AC141E82842300264E95 /* LocalPlay */,
 				D704AC1B1E82842300264E95 /* Main */,
 				D704AC231E82842300264E95 /* Music */,
 				D704AC271E82842300264E95 /* OnlinePlay */,
+				D704AC141E82842300264E95 /* LocalPlay */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -383,11 +392,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D704AC361E82842300264E95 /* JYOnlineMusicListViewController.storyboard in Resources */,
+				D76608E71EC2B5D50071F16B /* test2.mp3 in Resources */,
 				D704ABF01E82811A00264E95 /* LaunchScreen.storyboard in Resources */,
+				D76608E61EC2B5D50071F16B /* test1.mp3 in Resources */,
 				D704AC301E82842300264E95 /* Main.storyboard in Resources */,
 				D704ABED1E82811A00264E95 /* Assets.xcassets in Resources */,
 				D704AC351E82842300264E95 /* JYPlayView.xib in Resources */,
 				D704AC2D1E82842300264E95 /* JYLocalMusicListViewController.storyboard in Resources */,
+				D76608E81EC2B5D50071F16B /* test3.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
