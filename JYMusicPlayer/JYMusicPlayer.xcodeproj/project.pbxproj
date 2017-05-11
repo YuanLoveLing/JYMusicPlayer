@@ -22,10 +22,10 @@
 		D75820431EC3271B0046EA02 /* test1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D75820401EC3271B0046EA02 /* test1.mp3 */; };
 		D75820441EC3271B0046EA02 /* test2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D75820411EC3271B0046EA02 /* test2.mp3 */; };
 		D75820451EC3271B0046EA02 /* test3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D75820421EC3271B0046EA02 /* test3.mp3 */; };
-		D758204A1EC327C20046EA02 /* JYLocalMusicListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75820481EC327C20046EA02 /* JYLocalMusicListViewController.storyboard */; };
-		D758204B1EC327C20046EA02 /* JYLocalMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75820491EC327C20046EA02 /* JYLocalMusicListViewController.swift */; };
-		D758204E1EC327DB0046EA02 /* JYOnlineMusicListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D758204C1EC327DB0046EA02 /* JYOnlineMusicListViewController.storyboard */; };
-		D758204F1EC327DB0046EA02 /* JYOnlineMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758204D1EC327DB0046EA02 /* JYOnlineMusicListViewController.swift */; };
+		D76BA6CB1EC3FA22003213B4 /* JYLocalMusicListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76BA6C71EC3FA22003213B4 /* JYLocalMusicListViewController.storyboard */; };
+		D76BA6CC1EC3FA22003213B4 /* JYLocalMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BA6C81EC3FA22003213B4 /* JYLocalMusicListViewController.swift */; };
+		D76BA6CD1EC3FA22003213B4 /* JYOnlineMusicListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76BA6C91EC3FA22003213B4 /* JYOnlineMusicListViewController.storyboard */; };
+		D76BA6CE1EC3FA22003213B4 /* JYOnlineMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BA6CA1EC3FA22003213B4 /* JYOnlineMusicListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,10 +67,10 @@
 		D75820401EC3271B0046EA02 /* test1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test1.mp3; sourceTree = "<group>"; };
 		D75820411EC3271B0046EA02 /* test2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test2.mp3; sourceTree = "<group>"; };
 		D75820421EC3271B0046EA02 /* test3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test3.mp3; sourceTree = "<group>"; };
-		D75820481EC327C20046EA02 /* JYLocalMusicListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JYLocalMusicListViewController.storyboard; sourceTree = "<group>"; };
-		D75820491EC327C20046EA02 /* JYLocalMusicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYLocalMusicListViewController.swift; sourceTree = "<group>"; };
-		D758204C1EC327DB0046EA02 /* JYOnlineMusicListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JYOnlineMusicListViewController.storyboard; sourceTree = "<group>"; };
-		D758204D1EC327DB0046EA02 /* JYOnlineMusicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYOnlineMusicListViewController.swift; sourceTree = "<group>"; };
+		D76BA6C71EC3FA22003213B4 /* JYLocalMusicListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JYLocalMusicListViewController.storyboard; sourceTree = "<group>"; };
+		D76BA6C81EC3FA22003213B4 /* JYLocalMusicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYLocalMusicListViewController.swift; sourceTree = "<group>"; };
+		D76BA6C91EC3FA22003213B4 /* JYOnlineMusicListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JYOnlineMusicListViewController.storyboard; sourceTree = "<group>"; };
+		D76BA6CA1EC3FA22003213B4 /* JYOnlineMusicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYOnlineMusicListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,12 +122,14 @@
 			isa = PBXGroup;
 			children = (
 				D75820351EC325B30046EA02 /* JYMusicPlayerView */,
-				D75820461EC3279B0046EA02 /* LocalPlay */,
-				D75820471EC3279B0046EA02 /* OnlinePlay */,
 				D75820071EC325520046EA02 /* AppDelegate.swift */,
 				D75820091EC325520046EA02 /* ViewController.swift */,
 				D758200B1EC325520046EA02 /* Main.storyboard */,
 				D758203A1EC3263A0046EA02 /* UIView+Extension.swift */,
+				D76BA6C71EC3FA22003213B4 /* JYLocalMusicListViewController.storyboard */,
+				D76BA6C81EC3FA22003213B4 /* JYLocalMusicListViewController.swift */,
+				D76BA6C91EC3FA22003213B4 /* JYOnlineMusicListViewController.storyboard */,
+				D76BA6CA1EC3FA22003213B4 /* JYOnlineMusicListViewController.swift */,
 				D758200E1EC325520046EA02 /* Assets.xcassets */,
 				D75820101EC325520046EA02 /* LaunchScreen.storyboard */,
 				D75820131EC325520046EA02 /* Info.plist */,
@@ -165,24 +167,6 @@
 				D758203E1EC326FE0046EA02 /* JYMusic.swift */,
 			);
 			path = JYMusicPlayerView;
-			sourceTree = "<group>";
-		};
-		D75820461EC3279B0046EA02 /* LocalPlay */ = {
-			isa = PBXGroup;
-			children = (
-				D75820481EC327C20046EA02 /* JYLocalMusicListViewController.storyboard */,
-				D75820491EC327C20046EA02 /* JYLocalMusicListViewController.swift */,
-			);
-			path = LocalPlay;
-			sourceTree = "<group>";
-		};
-		D75820471EC3279B0046EA02 /* OnlinePlay */ = {
-			isa = PBXGroup;
-			children = (
-				D758204C1EC327DB0046EA02 /* JYOnlineMusicListViewController.storyboard */,
-				D758204D1EC327DB0046EA02 /* JYOnlineMusicListViewController.swift */,
-			);
-			path = OnlinePlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,9 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D75820121EC325520046EA02 /* LaunchScreen.storyboard in Resources */,
-				D758204E1EC327DB0046EA02 /* JYOnlineMusicListViewController.storyboard in Resources */,
+				D76BA6CD1EC3FA22003213B4 /* JYOnlineMusicListViewController.storyboard in Resources */,
 				D758200F1EC325520046EA02 /* Assets.xcassets in Resources */,
-				D758204A1EC327C20046EA02 /* JYLocalMusicListViewController.storyboard in Resources */,
+				D76BA6CB1EC3FA22003213B4 /* JYLocalMusicListViewController.storyboard in Resources */,
 				D75820391EC325D40046EA02 /* JYMusicPlayerView.xib in Resources */,
 				D75820451EC3271B0046EA02 /* test3.mp3 in Resources */,
 				D75820431EC3271B0046EA02 /* test1.mp3 in Resources */,
@@ -335,9 +319,9 @@
 			files = (
 				D758203F1EC326FE0046EA02 /* JYMusic.swift in Sources */,
 				D758203D1EC3266E0046EA02 /* JYMusicPlayerManager.swift in Sources */,
-				D758204B1EC327C20046EA02 /* JYLocalMusicListViewController.swift in Sources */,
+				D76BA6CC1EC3FA22003213B4 /* JYLocalMusicListViewController.swift in Sources */,
 				D758200A1EC325520046EA02 /* ViewController.swift in Sources */,
-				D758204F1EC327DB0046EA02 /* JYOnlineMusicListViewController.swift in Sources */,
+				D76BA6CE1EC3FA22003213B4 /* JYOnlineMusicListViewController.swift in Sources */,
 				D75820371EC325CB0046EA02 /* JYMusicPlayerView.swift in Sources */,
 				D758203B1EC3263A0046EA02 /* UIView+Extension.swift in Sources */,
 				D75820081EC325520046EA02 /* AppDelegate.swift in Sources */,
@@ -593,6 +577,7 @@
 				D758202E1EC325520046EA02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D758202F1EC325520046EA02 /* Build configuration list for PBXNativeTarget "JYMusicPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +586,7 @@
 				D75820311EC325520046EA02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D75820321EC325520046EA02 /* Build configuration list for PBXNativeTarget "JYMusicPlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -609,6 +595,7 @@
 				D75820341EC325520046EA02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
