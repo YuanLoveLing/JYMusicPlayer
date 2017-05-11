@@ -83,7 +83,7 @@ extension JYOnlineMusicListViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let music = dataSourceArray[indexPath.row]
         // 2、开始现在
-        JYMusicPlayerView.shareInstance.showWithPlayerItem(music: music, isOnline: true)
+        JYMusicPlayerView.show(music: music, isOnline: true)
         
     }
 }

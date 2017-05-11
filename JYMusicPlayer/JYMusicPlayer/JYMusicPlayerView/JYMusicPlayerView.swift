@@ -12,6 +12,8 @@ import AVFoundation
 class JYMusicPlayerView: UIView {
     /// 歌曲名称
     @IBOutlet fileprivate weak var musicNameLbl: UILabel!
+    /// 歌手名称
+    @IBOutlet fileprivate weak var singerNameLbl: UILabel!
     
     /// 进度条视图左边距离
     @IBOutlet fileprivate weak var progressContainerViewLeft: NSLayoutConstraint!
@@ -38,11 +40,52 @@ class JYMusicPlayerView: UIView {
     
     /// 计时器：更新播放进度
     fileprivate var progressTimer: Timer?
+
+    /// 显示
+    class func show(music: JYMusic, isOnline: Bool) {
+        guard let urlString = music.urlString else {
+            return
+        }
     
-    /// 实例化对象单例方法
-    static let shareInstance = {
-        return Bundle.main.loadNibNamed("JYMusicPlayerView", owner: nil, options: nil)?.first as! JYMusicPlayerView
-    }()
+        let playerView = Bundle.main.loadNibNamed("JYMusicPlayerView", owner: nil, options: nil)?.first as! JYMusicPlayerView
+    
+        let window = UIApplication.shared.keyWindow!
+        window.isUserInteractionEnabled = false
+        window.addSubview(playerView)
+        playerView.frame = window.bounds
+        
+        playerView.transform = CGAffineTransform(translationX: 0, y: window.height)
+        UIView.animate(withDuration: 0.25, animations: {
+            playerView.transform = CGAffineTransform.identity
+            
+        }) { (_) in
+            window.isUserInteractionEnabled = true
+            // 1、停止之前播放
+            JYMusicPlayerManager.shareInstance.destroy()
+            // 2、开始现在播放
+            playerView.playerItem = JYMusicPlayerManager.shareInstance.play(urlString: urlString, isOnline: isOnline)
+            playerView.urlString = urlString
+            // 添加计时器
+            playerView.addProgressTimer()
+            // 歌曲名称
+            playerView.musicNameLbl.text = music.name
+            // 歌手名称
+            playerView.singerNameLbl.text = music.singerName
+        }
+    }
+    
+    /// 消失
+    @IBAction fileprivate func dismissButtonDidClick() {
+        let window = UIApplication.shared.keyWindow!
+        window.isUserInteractionEnabled = false
+        UIView.animate(withDuration: 0.25, animations: {
+            self.y = window.height
+            
+        }) {(_) in
+            self.removeFromSuperview()
+            window.isUserInteractionEnabled = true
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -93,48 +136,6 @@ class JYMusicPlayerView: UIView {
             playerItem.seek(to: time)
             // 添加计时器
             addProgressTimer()
-        }
-    }
-    
-    ///  显示
-    func showWithPlayerItem(music: JYMusic, isOnline: Bool) {
-        guard let urlString = music.urlString else {
-            return
-        }
-        
-        let window = UIApplication.shared.keyWindow!
-        window.isUserInteractionEnabled = false
-        window.addSubview(self)
-        frame = window.bounds
-        
-        y = window.height
-        UIView.animate(withDuration: 0.25, animations: {
-            self.y = 0
-            
-        }) {[weak self] (_) in
-            window.isUserInteractionEnabled = true
-            // 1、停止之前播放
-            JYMusicPlayerManager.shareInstance.destroy()
-            // 2、开始现在播放
-            self?.playerItem = JYMusicPlayerManager.shareInstance.play(urlString: urlString, isOnline: isOnline)
-            self?.urlString = urlString
-            // 添加计时器
-            self?.addProgressTimer()
-            // 歌曲名称
-            self?.musicNameLbl.text = music.name
-        }
-    }
-    
-    // 点击“隐藏”按钮
-    @IBAction fileprivate func dismissButtonDidClick() {
-        let window = UIApplication.shared.keyWindow!
-        window.isUserInteractionEnabled = false
-        UIView.animate(withDuration: 0.25, animations: {
-            self.y = window.height
-            
-        }) {(_) in
-            self.removeFromSuperview()
-            window.isUserInteractionEnabled = true
         }
     }
     

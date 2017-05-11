@@ -286,8 +286,9 @@
                 <outlet property="progressDotView" destination="KoW-UO-Rl5" id="1jj-ni-fLk"/>
                 <outlet property="progressDotViewLeft" destination="9lg-eU-PLL" id="RuA-ZG-WtV"/>
                 <outlet property="progressDotViewWidth" destination="XQL-EA-mPl" id="lkQ-x5-g5B"/>
+                <outlet property="singerNameLbl" destination="Rar-is-lPo" id="D5t-46-mey"/>
             </connections>
-            <point key="canvasLocation" x="-19" y="59"/>
+            <point key="canvasLocation" x="163" y="50"/>
         </view>
     </objects>
     <resources>
